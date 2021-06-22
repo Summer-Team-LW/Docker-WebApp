@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
-body {
-  padding: 0;
-  margin: 0; 
-  height: 100vh;
-  background: #18191f;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: top;
+body{
+  position: relative;
 }
 
+.container-fluid {
+  background-color: black;
+}
 ul {
   position: relative;
   display: flex;
@@ -33,13 +29,12 @@ input[type="checkbox"] {
   z-index: 100;
 }
 
-div {
+.col-style {
   position: relative;
   height: 80px;
   width: 80px;
   background: #18191f;
   color: #555;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,24 +42,13 @@ div {
   cursor: pointer;
   margin: 0 4px;
   border-radius: 20px;
-  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+  box-shadow: -1px -1px 4px rgba(216, 8, 8, 0.05),
     4px 4px 6px rgba(0, 0, 0, 0.2),
     inset -1px -1px 4px rgba(255, 255, 255, 0.05),
     inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
- /*div:before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 75px;
-  height: 38px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: rgba(255, 255, 255, 0.05); 
 
-} */ 
 
 input[type="checkbox"]:checked ~ div {
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
